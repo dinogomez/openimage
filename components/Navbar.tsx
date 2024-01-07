@@ -9,7 +9,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
   return (
-    <nav className="flex flex-col  items-center px-12 py-12 sm:px-24  md:px-24  ">
+    <nav className="flex flex-col  items-center px-12 py-12 sm:px-24 md:px-24 lg:px-16">
       <div className="flex flex-col sm:flex-row w-full justify-between ">
         <Link
           href="/"
