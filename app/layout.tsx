@@ -23,24 +23,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <title>OpenImage Compression</title>
-        <meta
-          name="description"
-          content="Fast Open-Source Bulk Image Compression for Free and Without Ads. Compress Image Free Online"
-          key="desc"
-        />
-
-        <meta property="og:title" content="OpenImage Free Compression" />
-        <meta
-          property="og:description"
-          content="Open-Source Bulk Image Compression for Free and Without Ads"
-        />
-        <meta property="og:image" content="https://i.imgur.com/BxZSkiY.png" />
-      </Head>
-      <Navbar />
       <body className={`${roboto.className} flex flex-col min-h-screen`}>
         <main className="flex-1">
+          <Navbar />
           <GoogleCaptchaWrapper>{children}</GoogleCaptchaWrapper>
           <SpeedInsights />
         </main>

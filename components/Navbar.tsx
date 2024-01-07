@@ -1,11 +1,13 @@
+"use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const pathname = usePathname();
-const isHomePage = pathname === "/";
 const navLinks = [{ name: "about", href: "/about" }];
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
   return (
     <nav className="flex flex-col  items-center px-12 py-12 sm:px-24  md:px-24  ">
       <div className="flex flex-col sm:flex-row w-full justify-between ">
