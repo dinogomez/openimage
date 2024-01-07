@@ -17,6 +17,10 @@ const credits = [
     name: "@fengyuanchen/compressorjs",
     href: "https://github.com/fengyuanchen/compressorjs",
   },
+  {
+    name: "@Supabase/Postgres",
+    href: "https://supabase.com",
+  },
 ];
 
 export default function CostCard() {
@@ -46,8 +50,10 @@ export default function CostCard() {
             <p className="text-gray-600 border-b mb-2">operating cost</p>
             <div className="text-sm text-gray-500">
               {" "}
-              <p>domain : 23$</p>
-              <p>server : TBD$</p>
+              <p>💻 domain : $24/Yr Go Daddy</p>
+              <p>💾 server : $00 Vercel Free</p>
+              <p>🗄 database : $00 Supabase Free</p>
+              <p>🍜 snacks : $1 Ramen</p>
             </div>
           </div>
         </div>
