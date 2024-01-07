@@ -302,7 +302,7 @@ const Dropzone = ({ className }) => {
                 >
                   <X className="h-5 w-5 fill-white transition-colors hover:fill-red-500" />
                 </button>
-                <p className="mt-2 text-[12px] font-medium text-stone-500">
+                <p className="mt-2 text-[12px] font-medium text-stone-500 text-ellipsis overflow-hidden">
                   {file.name}
                 </p>
               </li>
@@ -326,7 +326,7 @@ const Dropzone = ({ className }) => {
           </div>
           <div className="ml-auto">
             <Button
-              className="ml-auto border-blue-500 text-blue-500 hover:bg-green-600 hover:text-white"
+              className="ml-auto border-blue-500 text-blue-500 hover:bg-blue-600 hover:text-white"
               variant="outline"
               onClick={(e) => {
                 e.preventDefault();
@@ -386,7 +386,7 @@ const Dropzone = ({ className }) => {
                   >
                     <X className="h-5 w-5 fill-white transition-colors hover:fill-red-500" />
                   </button>
-                  <p className="mt-2 text-[12px] font-medium text-stone-500">
+                  <p className="mt-2 text-[12px] font-medium text-stone-500 text-ellipsis overflow-hidden">
                     {fileData.compressedFile.name}
                   </p>
                 </li>
