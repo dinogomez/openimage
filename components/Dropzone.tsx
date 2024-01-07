@@ -453,7 +453,7 @@ const Dropzone = ({ className }) => {
           </div>
         )}
       </section>
-      <Toaster richColors expand={true} duration={8500} />
+      <Toaster richColors position="top-right" expand={true} duration={8500} />
     </form>
   );
 };
