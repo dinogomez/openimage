@@ -1,8 +1,15 @@
 import Dropzone from "@/components/Dropzone";
 import StatisticUpdate from "@/components/RealtimeStatisticUpdate";
 import supabase from "@/lib/supabase/server";
+import { Metadata } from "next";
 import Head from "next/head";
 export const revalidate = 0;
+
+export const metadata: Metadata = {
+  title: "OpenImage.dev - Free Image Compression without Ads",
+  description:
+    "Effortlessly compress 4K, 1440p, and 1080p image files with our ad-free service. Support for various formats. Compress and download images with ease at OpenImage.dev.",
+};
 
 export default async function Home() {
   const id: number = 1;

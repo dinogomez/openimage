@@ -33,7 +33,7 @@ export default function RootLayout({
         <title>OpenImage Compression</title>
         <meta
           name="description"
-          content="Open-Source Bulk Image Compression for Free and Without Ads. "
+          content="Fast Open-Source Bulk Image Compression for Free and Without Ads. Compress Image Free Online"
           key="desc"
         />
 
@@ -45,7 +45,7 @@ export default function RootLayout({
         <meta property="og:image" content="https://i.imgur.com/BxZSkiY.png" />
       </Head>
       <body className={`${roboto.className} flex flex-col min-h-screen`}>
-        <nav className="flex flex-col  items-center px-12 py-12 sm:px-44  ">
+        <nav className="flex flex-col  items-center px-12 py-12 sm:px-24  md:px-24  ">
           <div className="flex flex-col sm:flex-row w-full justify-between ">
             <Link
               href="/"
