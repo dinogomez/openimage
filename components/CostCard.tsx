@@ -37,7 +37,7 @@ export default function CostCard() {
               {credits.map((link) => {
                 return (
                   <Link
-                    href=""
+                    href={link.href}
                     className="hover:underline hover:underline-offset-4 hover:decoration-wavy hover:bg-black hover:text-white"
                   >
                     {link.name},{" "}

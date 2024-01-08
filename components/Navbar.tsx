@@ -26,7 +26,7 @@ export default function Navbar({ pathname }: { pathname: string }) {
                   <h1 className="text-white bg-blue-500 px-1">no-upload</h1>
                 </div>
               </div>
-              <h2 className="flex w-full ml-2 text-xs tracking-wider text-gray-500">
+              <h2 className="flex w-full text-xs tracking-wider text-gray-500">
                 free image compression!
               </h2>
             </div>
