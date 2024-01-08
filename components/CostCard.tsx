@@ -38,6 +38,7 @@ export default function CostCard() {
                 return (
                   <Link
                     href={link.href}
+                    target="_blank"
                     className="hover:underline hover:underline-offset-4 hover:decoration-wavy hover:bg-black hover:text-white"
                   >
                     {link.name},{" "}
