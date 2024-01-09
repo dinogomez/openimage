@@ -54,7 +54,7 @@ export default function StatisticUpdate({
       {stat.imgconverted.toLocaleString()} imgs converted, compressed{" "}
       {formatBytes(stat.totalsize)} of data into{" "}
       {formatBytes(stat.totalsizeconverted)} globally, saved{" "}
-      {percentageReduction(stat.totalsize, stat.totalsizeconverted)}%
+      {percentageReduction(stat.totalsize, stat.totalsizeconverted).toFixed(2)}%
       <span className="animate-pulse">🌎</span>
     </h1>
   );
