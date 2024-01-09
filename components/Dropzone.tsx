@@ -114,7 +114,7 @@ const Dropzone = ({ className }) => {
     accept: {
       "image/*": [],
     },
-    maxSize: 3840 * 2160,
+    maxSize: 7680 * 4320,
     onDrop,
   });
 
@@ -230,7 +230,7 @@ const Dropzone = ({ className }) => {
           ) : (
             <p>drag & drop images here, or click to select images 🖼️</p>
           )}
-          <p>3840 x 2160 4K</p>
+          <p>7,680 x 4,320 8K</p>
         </div>
       </div>
 
