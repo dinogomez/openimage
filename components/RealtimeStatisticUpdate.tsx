@@ -42,12 +42,19 @@ export default function StatisticUpdate({
     };
   }, [supabase, stat, setStat]);
 
+  const percentageReduction = (
+    totalSize: number,
+    totalSizeCompressed: number
+  ) => {
+    return ((totalSize - totalSizeCompressed) / totalSize) * 100;
+  };
+
   return (
     <h1 className="text-gray-500 text-xs ">
       {stat.imgconverted.toLocaleString()} imgs converted, compressed{" "}
       {formatBytes(stat.totalsize)} of data into{" "}
       {formatBytes(stat.totalsizeconverted)} globally, saved{" "}
-      {formatBytes(stat.totalsize - stat.totalsizeconverted)}{" "}
+      {percentageReduction(stat.totalsize, stat.totalsizeconverted)}%
       <span className="animate-pulse">🌎</span>
     </h1>
   );
