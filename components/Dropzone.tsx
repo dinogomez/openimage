@@ -103,7 +103,7 @@ const Dropzone = ({ className }) => {
     const endTime = performance.now();
     const elapsedTime = endTime - startTime;
     toast.success(
-      `Compressed ${files.length} images  ${timeConvert(elapsedTime)}`,
+      `Compressed ${files.length} images in ${timeConvert(elapsedTime)}`,
       {
         id: toastId,
       }
