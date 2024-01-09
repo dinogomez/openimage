@@ -45,7 +45,9 @@ export default function StatisticUpdate({
   return (
     <h1 className="text-gray-500 text-xs ">
       {stat.imgconverted.toLocaleString()} imgs converted, compressed{" "}
-      {formatBytes(stat.totalsize - stat.totalsizeconverted)} of data globally{" "}
+      {formatBytes(stat.totalsize)} of data into{" "}
+      {formatBytes(stat.totalsizeconverted)} globally, saved{" "}
+      {formatBytes(stat.totalsize - stat.totalsizeconverted)}{" "}
       <span className="animate-pulse">🌎</span>
     </h1>
   );
