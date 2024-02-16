@@ -8,21 +8,19 @@ export default function AboutCard() {
       <div className="w-full max-w-md p-6 m-4 bg-white shadow-md rounded-lg">
         <div className="flex justify-center md:justify-end -mt-16">
           <Image
-            alt="Website maker in action"
-            className="object-cover w-20 h-20 rounded-full "
+            alt="Avatar"
+            className="object-contain w-20 h-20 rounded-full "
             height={100}
-            src="/dog.png"
-            style={{
-              aspectRatio: "100/100",
-              objectFit: "cover",
-            }}
+            src={"https://avatars.githubusercontent.com/u/41871666"}
             width={100}
           />
         </div>
         <div className="mt-2">
+          <Link href="https://github.com/dinogomez" target="_blank">
           <h2 className="text-3xl font-semibold text-gray-800 tracking-wide decoration-slice underline underline-offset-4 decoration-green-500">
-            @dogcodes
+            @dinogomez
           </h2>
+          </Link>
           <p className="mt-2 text-sm text-gray-500">
             Hi! I'm a full-stack developer with a passion for creating
             open-source tools, extensions, and websites—
@@ -30,8 +28,7 @@ export default function AboutCard() {
               all free of ads
             </span>
             . You can explore my work on GitHub. If you find my works and
-            projects valuable, consider supporting me through Ko-fi. Let's build
-            a better digital world together! 🐶🚀
+            projects valuable, consider giving this <Link href="https://github.com/dinogomez/openimage"><span className="font-bold text-gray-800 tracking-wide decoration-wavy underline underline-offset-4 decoration-green-500">repository</span></Link> a star ⭐. 
           </p>
         </div>
         <div className="mt-4 flex text-sm justify-end">
@@ -41,12 +38,7 @@ export default function AboutCard() {
           >
             <h1>github</h1>
           </Link>
-          <Link
-            className="mx-2 bg-rose-500 text-white px-1 hover:underline"
-            href="https://ko-fi.com/dogcodes"
-          >
-            <h1>kofi</h1>
-          </Link>
+
         </div>
       </div>
     </section>

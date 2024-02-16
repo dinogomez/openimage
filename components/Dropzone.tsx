@@ -99,6 +99,7 @@ const Dropzone = ({ className }) => {
     );
 
     setCompressedFiles((prevFiles) => [...prevFiles, ...compressedFilesArray]);
+    setFiles([]);
     setTotalSizeCompressed(totalCompressedSize);
     const endTime = performance.now();
     const elapsedTime = endTime - startTime;
@@ -297,7 +298,7 @@ const Dropzone = ({ className }) => {
                 />
                 <button
                   type="button"
-                  className="absolute -right-3 -top-3 flex h-7 w-7 items-center justify-center rounded-full border border-red-500 bg-red-500 transition-colors hover:bg-white"
+                  className="absolute -right-3 -top-3 flex h-7 w-7 items-center justify-center rounded-full border border-red-500 bg-red-500 transition-colors hover:bg-white text-white"
                   onClick={() => removeFile(file.name)}
                 >
                   <X className="h-5 w-5 fill-white transition-colors hover:fill-red-500" />
@@ -379,13 +380,7 @@ const Dropzone = ({ className }) => {
                     height={100}
                     className="h-full w-full object-contain rounded-md"
                   />
-                  <button
-                    type="button"
-                    className="absolute -right-3 -top-3 flex h-7 w-7 items-center justify-center rounded-full border border-red-500 bg-red-500 transition-colors hover:bg-white"
-                    onClick={() => removeCompressedFile(fileData.name)}
-                  >
-                    <X className="h-5 w-5 fill-white transition-colors hover:fill-red-500" />
-                  </button>
+                  
                   <p className="mt-2 text-[12px] font-medium text-stone-500 text-ellipsis overflow-hidden">
                     {fileData.compressedFile.name}
                   </p>
